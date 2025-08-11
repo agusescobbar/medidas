@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>-`ღ´-</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>medidas *:・ﾟ✧</h1>
+
+<form id="medidasForm">
+  <label>Nombre:
+    <input type="text" id="nombre" required>
+  </label>
+  <label>Contorno Busto (cm):
+    <input type="number" id="contornoBusto" required>
+  </label>
+  <label>Contorno Cuello (cm):
+    <input type="number" id="contornoCuello" required>
+  </label>
+  <label>Contorno Cintura (cm):
+    <input type="number" id="cintura" required>
+  </label>
+  <label>Contorno Cadera (cm):
+    <input type="number" id="cadera" required>
+  </label>
+  <label>Hombro (cm) :
+    <input type="number" id="hombro" required>
+  </label>
+  <label>Largo delantero (cm) :
+    <input type="number" id="largo" required>
+  </label>
+  <button type="submit">Generar ficha</button>
+</form>
+
+<div id="ficha">
+  <h2>Tabla de medidas</h2>
+  <p><strong>Nombre:</strong> <span id="ficha-nombre"></span></p>
+  
+  <svg class="silueta" viewBox="0 0 64 128" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="32" cy="16" r="12" fill="#5a3386"/>
+    <rect x="20" y="28" width="24" height="40" fill="#5a3386" rx="8"/>
+    <rect x="20" y="68" width="10" height="40" fill="#5a3386"/>
+    <rect x="34" y="68" width="10" height="40" fill="#5a3386"/>
+  </svg>
+  
+  <div class="medidas">
+    <p id="ficha-altura"></p>
+    <p id="ficha-busto"></p>
+    <p id="ficha-cintura"></p>
+    <p id="ficha-cadera"></p>
+    <p id="ficha-hombro"></p>
+    <p id="ficha-largo"></p>
+  </div>
+  
+  <small>(っ´ω`c)♡</small>
+  <button type="submit" id="descargarBtn">Descargar como imagen</button>
+</div>
+
+<!-- //soy la uno aunque me olvide
+//@agusescobbar & @atelierfausti ni volviendo a nacer se puede hacer algo igual-->>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
